@@ -6,21 +6,22 @@ class LoginActivity extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Center(
+      appBar: AppBar(),
+      body: Row(
         children: [
-            Container(
+          Container(
             height: 250,
             width: 150,
             decoration: BoxDecoration(
               image: DecorationImage(
                 image: AssetImage("gambar/Gudang.png"),
-                fit: BoxFit.cover
+                fit: BoxFit.cover,
               ),
-            ),    
             ),
-            Text("LKS\nMART"),
-          ],
-      ),
+          ),
+          Text("LKS\nMART", style: TextStyle(color: Colors.deepPurpleAccent, fontSize: 18, fontWeight: FontWeight.w700))
+        ],
+      )
       );
   }
 }
