@@ -1,3 +1,5 @@
+import 'dart:ui';
+
 import 'package:flutter/material.dart';
 
 class LoginActivity extends StatelessWidget {
@@ -74,7 +76,19 @@ class LoginActivity extends StatelessWidget {
                 child: Text("Keep me logged in", style: TextStyle(fontWeight: FontWeight.w700, fontSize: 12,)),
               ),
             ],
-          )
+          ),
+
+          SizedBox(height: 20),
+
+          ElevatedButton(
+            style: ButtonStyle(backgroundColor: WidgetStatePropertyAll(Colors.purple),WidgetStatePropertyAll(box)
+            onPressed: () {
+              
+            },
+            child: Text("Login", style: TextStyle(color: Colors.white, fontSize: 15),),
+          ),
+
+          Text("Belum punya akun?", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 10))
           ],
         ),
       ),
