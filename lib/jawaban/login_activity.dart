@@ -64,6 +64,17 @@ class LoginActivity extends StatelessWidget {
               )
             ),
           ),
+
+          SizedBox(height: 20),
+          Row(
+            children: [
+              Icon(Icons.check_box_outline_blank),
+              Padding(
+                padding: const EdgeInsets.only(left: 10),
+                child: Text("Keep me logged in", style: TextStyle(fontWeight: FontWeight.w700, fontSize: 12,)),
+              ),
+            ],
+          )
           ],
         ),
       ),
