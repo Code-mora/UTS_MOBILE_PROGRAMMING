@@ -7,21 +7,29 @@ class LoginActivity extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(),
-      body: Row(
+      body: Column(
         children: [
-          Container(
-            height: 250,
-            width: 150,
-            decoration: BoxDecoration(
-              image: DecorationImage(
-                image: AssetImage("gambar/Gudang.png"),
-                fit: BoxFit.cover,
+          Row(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Padding(
+                padding: const EdgeInsets.only(left: 600,),
+                child: Image(
+                  height: 100,
+                  width: 100,
+                  image: AssetImage("gambar/Logo.png"),
+                ),
               ),
-            ),
+              Padding(
+                padding: const EdgeInsets.only(left: 10),
+                child: Text("LKS\nMART", style: TextStyle(fontSize: 40, fontWeight: FontWeight.bold, color: Colors.purple)),
+              ),
+            ],
           ),
-          Text("LKS\nMART", style: TextStyle(color: Colors.deepPurpleAccent, fontSize: 18, fontWeight: FontWeight.w700))
+        
+        Text("Sign In")
         ],
-      )
-      );
+      ),
+    );
   }
 }
