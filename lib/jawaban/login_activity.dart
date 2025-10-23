@@ -39,11 +39,29 @@ class LoginActivity extends StatelessWidget {
             child: Text("Enter your ID and password to sign in!", style: TextStyle(color: Colors.black45)),
           ),
         
-          Text("Email"),
+          Text("Email", style: TextStyle(fontWeight: FontWeight.bold)),
+          SizedBox(height: 10),
           TextField(
             decoration: InputDecoration(
-              hintText: "Email",
-              border: BorderRadius.all(Radius.circular(15)),
+              hintText: "email",
+              hintStyle: TextStyle(fontSize: 12, fontWeight: FontWeight.w700),
+              border: OutlineInputBorder(
+                borderRadius: BorderRadius.all(Radius.circular(15)),
+              )
+            ),
+          ),
+
+          SizedBox(height: 15),
+          Text("Password*", style: TextStyle(fontWeight: FontWeight.bold)),
+          SizedBox(height: 10),
+          TextField(
+            decoration: InputDecoration(
+              hintText: "Min. 8 characters",
+              hintStyle: TextStyle(fontSize: 12, fontWeight: FontWeight.w700),
+              suffixIcon: Icon(Icons.remove_red_eye),
+              border: OutlineInputBorder(
+                borderRadius: BorderRadius.all(Radius.circular(15)),
+              )
             ),
           ),
           ],
